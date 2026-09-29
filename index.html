@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kyrillos Asrhaf | Data Engineer</title>
-<meta name="description" content="Kyrillos Asrhaf — Data Engineer portfolio focused on data, databases, Python, SQL and practical data solutions.">
+<title>Kyrillos Ashraf | Data Engineer</title>
+<meta name="description" content="Kyrillos Ashraf — Data Engineer portfolio focused on data, databases, Python, SQL and practical data solutions.">
 <style>
 :root{
   --bg:#030811;--bg2:#07111d;--card:#091624;--text:#f4f7fb;
-  --muted:#91a0b2;--green:#22c55e;--green-dark:#16a34a;
+  --muted:#91a0b2;--green:#22c55e;--green-dark:#16a34a;--yellow:#facc15;
   --line:rgba(255,255,255,.09)
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -90,7 +90,10 @@ section{padding:85px 0}
 }
 .item h3{font-size:17px}.item p{color:var(--muted);font-size:13px}.status{color:var(--green);font-size:11px;font-weight:700}
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.service h3{margin:10px 0 6px}.service p{font-size:13px;color:var(--muted)}
+.service{position:relative;overflow:hidden}
+.service:before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--green);opacity:.6}
+.service h3{margin:0 0 8px;font-size:18px}
+.service p{font-size:13px;color:var(--muted)}
 .contact{text-align:center}.contact-box{max-width:720px;margin:auto}
 .contact-box p{color:var(--muted)}
 footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#718096;font-size:12px}
@@ -109,7 +112,9 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
     <a class="logo" href="#"><span class="mark">&lt;/&gt;</span> Kyrillos<span style="color:var(--muted)">.data</span></a>
     <div class="navlinks">
       <a href="#about">About</a>
-      <a href="#education">Education</a><a href="#training">Training</a>
+      <a href="#education">Education</a>
+      <a href="#training">Training</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -121,11 +126,10 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
 <div class="container hero-inner">
   <div class="hello">Hello World! 👋</div>
   
-  <h1>I'm <span>Kyrillos Asrhaf</span></h1>
+  <h1>I'm <span>Kyrillos Ashraf</span></h1>
   <div class="role">Data Engineer</div>
   <p class="hero-text">
-    Data Engineer focused on building reliable, practical data solutions.
-    I work with Python, SQL and databases to organize, process and transform data into practical results.
+    I build practical data solutions using Python, SQL and databases, with a growing focus on data pipelines and data engineering.
   </p>
   <div class="buttons">
     <a class="btn primary" href="#projects">⌘ View Projects</a>
@@ -145,9 +149,9 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
       <span class="blue">role</span> = <span class="yellow">"Data Engineer"</span><br>
       <span class="blue">focus</span> = <span class="yellow">"Data &amp; Engineering"</span><br>
       <span class="blue">tools</span> = <span class="yellow">"Python | SQL | Databases | Pandas"</span><br>
-      <span class="blue">stack</span> = <span class="yellow">"Python | SQL | Databases | Pandas"</span><br>
+      <span class="blue">cloud</span> = <span class="yellow">"AWS | Azure | Docker"</span><br>
       <span class="blue">status</span> = <span class="green">"Building Practical Solutions ✓"</span><br><br>
-      <span class="green">✓ Turning data into practical solutions.</span>
+      <span class="green">✓ Learning, building, and improving with data.</span>
     </div>
   </div>
 </div>
@@ -155,16 +159,14 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
 
 <section id="about" class="reveal">
 <div class="container">
-  <div class="section-head"><h2>About Me</h2><p>Data, technology and continuous learning.</p></div>
+  <div class="section-head"><h2>About Me</h2><p>A little about my background and what I am currently working on.</p></div>
   <div class="card about">
     <p>
-      I'm a <strong>Data Engineer</strong> with a Data Analysis background, focused on building practical solutions with Python, SQL and databases.
-      I completed Data Analysis training and I am continuing to strengthen my Data Engineering skills through practical projects involving Python, SQL, databases and data processing.
+      I'm a Data Science student building my skills in Data Engineering through training and hands-on projects. I enjoy working with Python, SQL and databases, and I'm currently focusing on data pipelines, data warehousing and cloud technologies.
     </p>
   </div>
 </div>
 </section>
-
 
 <section id="education" class="reveal">
 <div class="container">
@@ -185,14 +187,14 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
 
 <section id="training" class="reveal">
 <div class="container">
-  <div class="section-head"><h2>Training</h2><p>Data Engineering training and technical development.</p></div>
+  <div class="section-head"><h2>Training</h2><p>Training and skills I am currently developing.</p></div>
   <div class="timeline">
     <div class="card item">
       <div class="badge">DE</div>
       <div>
-        <span class="status">COMPLETED</span>
+        <span class="status" style="color:var(--yellow)">IN PROGRESS</span>
         <h3>Data Engineering Training</h3>
-        <p>Currently building my knowledge and practical skills in Data Engineering.</p>
+        <p>Currently developing practical skills in Python, SQL, databases, pipelines and data engineering tools.</p>
       </div>
     </div>
     <div class="card item">
@@ -207,26 +209,57 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
 </div>
 </section>
 
-<section id="modules" class="reveal"> <div class="container">   <div class="section-head"><h2>Data Engineering Learning Path</h2><p>Core technologies and topics covered in my professional training.</p></div>   <div class="grid">     <div class="card service"><div class="project-icon">🐍</div><h3>Python</h3><p>Python fundamentals and advanced Python programming.</p></div>     <div class="card service"><div class="project-icon">🗄️</div><h3>Database & SQL</h3><p>Relational databases, SQL and database concepts.</p></div>     <div class="card service"><div class="project-icon">🏭</div><h3>Data Warehousing & Pipelines</h3><p>Data warehouse concepts and data pipeline workflows.</p></div>     <div class="card service"><div class="project-icon">🐳</div><h3>Docker & Linux</h3><p>Containerization and Linux fundamentals for data environments.</p></div>     <div class="card service"><div class="project-icon">🌿</div><h3>NoSQL Databases</h3><p>Non-relational database concepts and use cases.</p></div>     <div class="card service"><div class="project-icon">⚡</div><h3>Big Data Tools</h3><p>Foundations for working with large-scale data technologies.</p></div>     <div class="card service"><div class="project-icon">☁️</div><h3>Microsoft Azure</h3><p>Cloud fundamentals and Azure-based data concepts.</p></div>     <div class="card service"><div class="project-icon">🤖</div><h3>AI, Vector DB & RAG</h3><p>AI basics, vector databases and Retrieval-Augmented Generation systems.</p></div>   </div> </div> </section>   <section id="experience" class="reveal">
+<section id="modules" class="reveal">
 <div class="container">
-  <div class="section-head"><h2>Work Experience</h2><p>Building professional experience through practical projects.</p></div>
-  <div class="card about">
-    <p>
-      <strong>Building professional experience through practical projects.</strong><br>
-      My portfolio highlights academic and personal work that demonstrates my ability to work with Python, SQL, databases and data-focused applications.
-    </p>
+  <div class="section-head"><h2>Data Engineering Learning Path</h2><p>Core technologies and topics covered in my professional training.</p></div>
+  <div class="grid">
+    <div class="card service"><h3>Python</h3><p>Python fundamentals and advanced Python programming.</p></div>
+    <div class="card service"><h3>Database & SQL</h3><p>Relational databases, SQL and database concepts.</p></div>
+    <div class="card service"><h3>Data Warehousing & Pipelines</h3><p>Data warehouse concepts and data pipeline workflows.</p></div>
+    <div class="card service"><h3>Docker & Linux</h3><p>Containerization and Linux fundamentals for data environments.</p></div>
+    <div class="card service"><h3>NoSQL Databases</h3><p>Non-relational database concepts and use cases.</p></div>
+    <div class="card service"><h3>Big Data Tools</h3><p>Foundations for working with large-scale data technologies.</p></div>
+    <div class="card service"><h3>Microsoft Azure</h3><p>Cloud fundamentals and Azure-based data concepts.</p></div>
+    <div class="card service"><h3>AI, Vector DB & RAG</h3><p>AI basics, vector databases and Retrieval-Augmented Generation systems.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="experience" class="reveal">
+<div class="container">
+  <div class="section-head"><h2>Work Experience & Internships</h2><p>Projects and practical work from my learning journey.</p></div>
+  <div class="timeline">
+    <div class="card item">
+      <div class="badge">DE</div>
+      <div>
+        <span class="status" style="color:var(--yellow)">IN PROGRESS</span>
+        <h3>Data Engineering Trainee / Projects</h3>
+        <p>Currently working on Data Engineering training and building my skills through practical exercises with Python, SQL and databases.</p>
+      </div>
+    </div>
+    <div class="card item">
+      <div class="badge">DA</div>
+      <div>
+        <span class="status">COMPLETED</span>
+        <h3>Data Analyst - Hands-on Projects</h3>
+        <p>Executed data cleaning, exploratory data analysis (EDA), and data visualization using Python, Pandas, and SQL to extract actionable insights.</p>
+      </div>
+    </div>
   </div>
 </div>
 </section>
 
 <section id="projects" class="reveal">
 <div class="container">
-  <div class="section-head"><h2>Featured Projects</h2><p>Selected work from my previous projects.</p></div>
+  <div class="section-head"><h2>Featured Projects</h2><p>A few projects I have worked on during my studies and training.</p></div>
+   <p style="max-width:760px;margin:-18px auto 28px;text-align:center;color:var(--muted);font-size:13px">
+     These projects come from my university work and personal learning. I am currently expanding this section with more Data Engineering projects.
+   </p>
   <div class="grid">
     <article class="card project">
       <div class="project-icon">🥖</div>
       <h3>Bakery Management System</h3>
-      <p>A practical management and POS system designed to support bakery products, sales and daily operations.</p>
+      <p>A web-based management system for handling bakery products, sales and day-to-day operations.</p>
       <div class="tags">
         <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">HTML</span>
         <span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Database</span>
@@ -237,7 +270,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
     <article class="card project">
       <div class="project-icon">🚗</div>
       <h3>Car Rental Management System</h3>
-      <p>A database-driven web application for managing cars, reservations, payments and administrative operations.</p>
+      <p>A database project for managing cars, reservations, payments and related operations.</p>
       <div class="tags">
         <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">HTML</span>
         <span class="tag">CSS</span><span class="tag">JavaScript</span>
@@ -248,11 +281,11 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
     <article class="card project">
       <div class="project-icon">🗄️</div>
       <h3>Database Project</h3>
-      <p>A database-focused project demonstrating practical work with database concepts and structured data.</p>
+      <p>A university database project focused on SQL, structured data and database concepts.</p>
       <div class="tags">
         <span class="tag">Database</span><span class="tag">SQL</span><span class="tag">Data</span>
       </div>
-      <a class="project-link" href="#" onclick="return false;">GitHub →</a>
+      <a class="project-link" href="https://github.com/kyrillosashraf" target="_blank" rel="noopener">GitHub →</a>
     </article>
   </div>
 </div>
@@ -260,45 +293,50 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
 
 <section id="skills" class="reveal">
 <div class="container">
-  <div class="section-head"><h2>Data Engineering Skills</h2><p>Technical stack and core areas of expertise.</p></div>
+  <div class="section-head"><h2>Technical Skills</h2><p>Tools and technologies I use or am currently developing.</p></div>
   <div class="skills">
-    <span class="skill">Python</span><span class="skill">SQL</span><span class="skill">Pandas</span>
-    <span class="skill">Data Analysis</span><span class="skill">Databases</span><span class="skill">Flask</span>
-    <span class="skill">PHP</span><span class="skill">HTML</span><span class="skill">CSS</span>
-    <span class="skill">JavaScript</span><span class="skill">Data Cleaning</span><span class="skill">Data Visualization</span>
-    <span class="skill">Exploratory Data Analysis</span>
+    <span class="skill">Python</span>
+    <span class="skill">SQL</span>
+    <span class="skill">ETL & Data Pipelines</span>
+    <span class="skill">Relational Databases</span>
+    <span class="skill">Data Warehousing</span>
+    <span class="skill">Pandas</span>
+    <span class="skill">Data Cleaning & EDA</span>
+    <span class="skill">Cloud Fundamentals (AWS / Azure)</span>
+    <span class="skill">Docker & Linux</span>
+    <span class="skill">Git & GitHub</span>
+    <span class="skill">Flask (APIs)</span>
   </div>
 </div>
 </section>
 
 <section id="services" class="reveal">
 <div class="container">
-  <div class="section-head"><h2>Data Engineering Focus</h2><p>Core areas I can work with professionally.</p></div>
+  <div class="section-head"><h2>Data Engineering Focus</h2><p>The areas I am focusing on as I build my Data Engineering experience.</p></div>
   <div class="services">
-    <div class="card service"><div class="project-icon">📊</div><h3>Data Analysis</h3><p>Data cleaning, exploration, basic analysis and extracting useful insights.</p></div>
-    <div class="card service"><div class="project-icon">🐍</div><h3>Python Data Solutions</h3><p>Data processing and practical Python-based projects.</p></div>
-    <div class="card service"><div class="project-icon">🗄️</div><h3>Database Projects</h3><p>Working with structured data and database-driven applications.</p></div>
+    <div class="card service">
+      <h3>Data Pipelines & ETL</h3>
+      <p>Working with the basics of extracting, cleaning, transforming and loading data.</p>
+    </div>
+    <div class="card service">
+      <h3>Data Warehousing & Architecture</h3>
+      <p>Learning how data warehouses are structured and how data can be organized for efficient use.</p>
+    </div>
+    <div class="card service">
+      <h3>Database & Python Solutions</h3>
+      <p>Building database-driven applications and data processing scripts with Python and SQL.</p>
+    </div>
   </div>
 </div>
 </section>
-
 
 <section id="achievements" class="reveal">
 <div class="container">
-  <div class="section-head"><h2>Achievements</h2><p>Milestones in my learning journey.</p></div>
+  <div class="section-head"><h2>Achievements</h2><p>A few milestones from my studies and training.</p></div>
   <div class="grid">
-    <div class="card service"><div class="project-icon">🎓</div><h3>Data Analysis Training</h3><p>Completed practical training focused on working with data, analysis and visualization.</p></div>
-    <div class="card service"><div class="project-icon">⚙️</div><h3>Data Engineering Training</h3><p>Completed a comprehensive Data Engineering learning path covering modern data platforms, pipelines, cloud and AI data systems.</p></div>
-    <div class="card service"><div class="project-icon">💻</div><h3>Practical Projects</h3><p>Built and contributed to database-driven and management system projects.</p></div>
-  </div>
-</div>
-</section>
-
-<section id="testimonials" class="reveal">
-<div class="container">
-  <div class="section-head"><h2>Testimonials</h2><p>Social proof will be added as professional collaborations grow.</p></div>
-  <div class="card about">
-    <p>Client testimonials are not listed yet. This section is intentionally kept honest and will be updated with real feedback from future collaborations.</p>
+    <div class="card service"><h3>Data Analysis Training</h3><p>Completed practical training focused on working with data, analysis and visualization.</p></div>
+    <div class="card service"><h3>Data Engineering Training</h3><p>Currently completing training focused on databases, pipelines, cloud technologies and modern data tools.</p></div>
+    <div class="card service"><h3>Practical Projects</h3><p>Built and contributed to database-driven and management system projects.</p></div>
   </div>
 </div>
 </section>
@@ -308,8 +346,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
   <div class="section-head"><h2>My Unique Value</h2><p>A clear value proposition.</p></div>
   <div class="card about">
     <p style="font-size:18px;color:#e8edf4">
-      I combine a <strong>Data Analysis background</strong> with hands-on
-      <strong>Data Engineering skills</strong> to organize, process and transform data into practical solutions.
+      My background in <strong>Data Analysis</strong> helps me understand data before I build solutions around it. I am now developing my <strong>Data Engineering</strong> skills to work with data more efficiently from source to database.
     </p>
   </div>
 </div>
@@ -317,7 +354,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
 
 <section id="contact" class="contact reveal">
 <div class="container">
-  <div class="section-head"><h2>Let's Connect</h2><p>I'm open to learning, collaboration and future opportunities.</p></div>
+  <div class="section-head"><h2>Let's Connect</h2><p>Always happy to connect about projects, internships, learning opportunities and collaboration.</p></div>
   <div class="card contact-box">
     <p style="font-size:17px;color:#e8edf4"><strong>Ready to connect?</strong></p>
     <p>Email: <a href="mailto:kiroashraf493@gmail.com" style="color:var(--green)">kiroashraf493@gmail.com</a></p>
@@ -330,7 +367,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:#
 </div>
 </section>
 
-<footer>© 2026 Kyrillos Asrhaf — Data Engineer</footer>
+<footer>© 2026 Kyrillos Ashraf — Data Engineer</footer>
 
 <script>
 const observer=new IntersectionObserver(entries=>{
